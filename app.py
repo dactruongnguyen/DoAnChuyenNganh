@@ -24,7 +24,7 @@ except Exception as e:
 # Load the ResNet model
 resnet_model = None
 try:
-    resnet_model = tf.keras.models.load_model("Classification Cucumber ResNet50.keras")
+    resnet_model = tf.keras.models.load_model("Classification_Cucumber_ResNet50.keras")
 except Exception as e:
     print(f"ResNet model loading failed: {e}")
 
