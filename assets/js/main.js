@@ -38,11 +38,11 @@ document
       .then((data) => {
         if (data.disease) {
           document.getElementById("disease").innerText =
-            "Predicted disease: " +
-            data.disease +
-            " (Confidence: " +
-            data.confidence +
-            "%)";
+            "Dự đoán của mô hình : " + data.disease;
+          // +
+          // " (Tỉ lệ chính xác : " +
+          // data.confidence +
+          // "%)";
         } else if (data.error) {
           document.getElementById("disease").innerText = "Error: " + data.error;
         }
